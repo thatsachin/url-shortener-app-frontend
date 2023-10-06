@@ -59,7 +59,7 @@ const Login = () => {
       try {
         setButtonText('Loading...');
         setLoading(true);
-        const res = await axios.post("http://localhost:5000/api/v1/auth/login", {
+        const res = await axios.post("https://url-shortener-backend-szjh.onrender.com/api/v1/auth/login", {
             email,
             password
         }, {
