@@ -11,7 +11,7 @@ const Auth = () => {
 
   useEffect(() => {
     const checkLogin = async () => {
-      const response = await axios.get('http://localhost:5000/api/v1/auth/check-login');
+      const response = await axios.get('https://url-shortener-backend-szjh.onrender.com/api/v1/auth/check-login');
       console.log(response.data.success);
       if (response.data.success) {
         setIsLoggedIn(true);
