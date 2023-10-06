@@ -14,7 +14,7 @@ const UrlListTable = () => {
 
   async function getAllUrlsData() {
       try {
-          const response = await axios.get("http://localhost:5000/api/v1/url/info",{withCredentials: true});
+          const response = await axios.get("https://url-shortener-backend-szjh.onrender.com/api/v1/url/info",{withCredentials: true});
 
           if(response.status === 200) {
               setUrlsData(response.data);
